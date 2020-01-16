@@ -5,7 +5,6 @@ import SEO from "../components/seo"
 import ReactMarkdown from "react-markdown"
 import { makeStyles } from "@material-ui/core/styles"
 
-
 const useStyles = makeStyles({
   bullet: {
     margin: "0 2px",
@@ -41,7 +40,7 @@ const BlogPage = ({ data }) => {
       <div className={classes.title}>
         <h1>{data.contentfulBlogPost.title}</h1>
         <ReactMarkdown
-          className={classes.items}
+          className={classes.title}
           source={data.contentfulBlogPost.body.body}
         />
 
