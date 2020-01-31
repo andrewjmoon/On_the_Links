@@ -8,6 +8,10 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 10px;
 }
 article,
 aside,
@@ -635,4 +639,23 @@ pre tt:after {
   align-items: center;
   display: center;
   text-align: center;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: grid;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 10px;
+}
+
+th {
+  text-align: center;
+  border: 1px solid black;
+  background: #018ded;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
 }

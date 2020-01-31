@@ -76,9 +76,8 @@
 }
 
 .center {
-  width: 90%;
-  display: block;
-  margin: 60px auto;
+  display: center;
+  text-align: center;
 }
 
 .right {
