@@ -1,4 +1,7 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
+## Concept
+This site uses Gatsby, Contentful, Material-UI, and is hosted on Netlify to create a paginated list of pages with provided interesting links.  
+
 <p align="center">
   <a href="https://www.gatsbyjs.org">
     <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
@@ -93,5 +96,8 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 ## 💫 Deploy
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
+
+## Issues
+One issue is to try and get the mobile view to look better.  The mobile view does not look good.  I am researching on finding an issue to the problem.
 
 <!-- AUTO-GENERATED-CONTENT:END -->
