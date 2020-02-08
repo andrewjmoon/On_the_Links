@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import ReactMarkdown from "react-markdown"
 import { makeStyles } from "@material-ui/core/styles"
-
+/*
 const useStyles = makeStyles({
   bullet: {
     margin: "0 2px",
@@ -30,19 +30,15 @@ const useStyles = makeStyles({
     color: "black",
   },
 })
-
+*/
 const BlogPage = ({ data }) => {
-  const classes = useStyles()
   //const { title, body, image } = props.data.contentfulBlogPost
   return (
-    <Layout className="center">
+    <Layout>
       <SEO title={data.contentfulBlogPost.title} />
-      <div className={classes.title}>
+      <div>
         <h1>{data.contentfulBlogPost.title}</h1>
-        <ReactMarkdown
-          className={classes.title}
-          source={data.contentfulBlogPost.body.body}
-        />
+        <ReactMarkdown source={data.contentfulBlogPost.body.body} />
 
         <Link className="Link" to="/blog">
           View more posts
