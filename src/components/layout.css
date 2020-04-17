@@ -4,11 +4,19 @@ html {
   -webkit-text-size-adjust: 100%;
   background-color: darkgray;
 }
+th {
+  text-align: center;
+  border: 1px solid black;
+  background: #018ded;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  display: flex;
+  display: grid;
   overflow-x: auto;
   white-space: nowrap;
   padding: 10px;
@@ -202,17 +210,6 @@ html {
 }
 *:after {
   box-sizing: inherit;
-}
-body {
-  color: hsla(0, 0%, 0%, 0.8);
-  font-family: georgia, serif;
-  font-weight: normal;
-  word-wrap: break-word;
-  font-kerning: normal;
-  -moz-font-feature-settings: "kern", "liga", "clig", "calt";
-  -ms-font-feature-settings: "kern", "liga", "clig", "calt";
-  -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
-  font-feature-settings: "kern", "liga", "clig", "calt";
 }
 img {
   max-width: 100%;
@@ -511,7 +508,12 @@ dt {
   font-weight: bold;
 }
 th {
-  font-weight: bold;
+  text-align: center;
+  border: 1px solid black;
+  background: #018ded;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
 }
 li {
   margin-bottom: calc(1.45rem / 2);
@@ -628,34 +630,25 @@ pre tt:after {
 .Center {
   margin: 50;
   font-size: 20;
-  justify: "center";
-  text-align: "center";
-  justify-content: "center";
-  align-content: "center";
-  color: "black";
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  color: black;
 }
 .Link {
+  color: black;
+  text-align: center;
+}
+.Link2 {
   color: black;
   align-items: center;
   display: center;
   text-align: center;
+  margin: 50;
+  font-size: 20;
 }
-
-body {
-  margin: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  display: grid;
-  overflow-x: auto;
-  white-space: nowrap;
-  padding: 10px;
-}
-
-th {
+.Link3 {
+  color: black;
   text-align: center;
-  border: 1px solid black;
-  background: #018ded;
-  position: sticky;
-  position: -webkit-sticky;
-  top: 0;
+  font-size: 15;
 }

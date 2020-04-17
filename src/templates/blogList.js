@@ -13,7 +13,7 @@ const useStyles = makeStyles({
   bullet: {
     margin: "0 2px",
     transform: "scale(0.8)",
-    minWidth: 800,
+    minWidth: 50,
     backgroundColor: "salmon",
     textAlign: "center",
     justifyContent: "center",
@@ -23,7 +23,7 @@ const useStyles = makeStyles({
   },
   title: {
     margin: 50,
-    fontSize: 40,
+    fontSize: 25,
     justify: "center",
     textAlign: "center",
     justifyContent: "center",
@@ -31,7 +31,7 @@ const useStyles = makeStyles({
   },
   title2: {
     margin: 50,
-    fontSize: 20,
+    fontSize: 17,
     justify: "center",
     textAlign: "center",
     justifyContent: "center",
@@ -39,7 +39,7 @@ const useStyles = makeStyles({
     color: "black",
   },
   items: {
-    fontSize: 25,
+    fontSize: 17,
     color: "black",
   },
 })

@@ -9,17 +9,16 @@ import Grid from "@material-ui/core/Grid"
 const useStyles = makeStyles({
   bullet: {
     margin: "0 2px",
-
-    transform: "scale(0.8)",
     minWidth: 800,
     backgroundColor: "salmon",
     textAlign: "center",
     justifyContent: "center",
     alignContent: "center",
+    fontSize: 14,
   },
   title: {
-    margin: 50,
-    fontSize: 20,
+    margin: 40,
+    fontSize: 30,
     justify: "center",
     textAlign: "center",
     justifyContent: "center",
@@ -27,7 +26,7 @@ const useStyles = makeStyles({
     color: "black",
   },
   items: {
-    fontSize: 25,
+    fontSize: 12,
     color: "black",
   },
 })
@@ -39,27 +38,19 @@ const BlogPage = ({ data }) => {
     <Layout>
       <SEO title={data.contentfulBlogPost.title} />
       <div>
-        <Grid
-          container
-          spacing={0}
-          directions="column"
-          alignItems="center"
-          justify="center"
-        >
-          <Grid item xs={10}>
-            <h1>{data.contentfulBlogPost.title}</h1>
+        <h2 className={classes.title}>{data.contentfulBlogPost.title}</h2>
+        <Grid container spacing={0} className={classes.bullet}>
+          <Grid item xs zeroMinWidth>
             <ReactMarkdown source={data.contentfulBlogPost.body.body} />
-
-            <Link className="Link" to="/blog">
-              View more posts
-            </Link>
-            <br />
-            <br />
-            <Link className="Link" to="/">
-              Back to Home
-            </Link>
           </Grid>
         </Grid>
+        <Link className="Link" to="/blog">
+          <p>View more posts</p>
+        </Link>
+        <br />
+        <Link className="Link" to="/">
+          <p>Back to Home</p>
+        </Link>
       </div>
     </Layout>
   )
